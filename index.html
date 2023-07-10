@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=0.3">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <title>Responsive</title>
+
+  <!-- Inline CSS -->
+  <style>
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+    }
+    
+    .sticky {
+      position: fixed !important;
+      top: 0;
+      width: 100%;
+    }
+
+    .hero{
+      height:30rem;
+      background-color: #eeeeee;
+      padding: 7rem;
+    }
+
+    .hero h1{
+      color: rgb(0, 0, 0);
+      font-family: Verdana;
+    }
+
+    .hero p{
+      color: rgb(0, 0, 0);
+      font-family: Verdana;
+    }
+
+    .nav-item a{
+      color: rgb(0, 0, 0);
+    }
+
+    .nav-item a:hover{
+      color: rgb(118, 118, 118);
+    }
+
+    .price-section{
+      margin: 5rem;
+    }
+
+    .price{
+      font-size: 5rem;
+    }
+
+    .icon {
+      font-size: 5rem;
+      margin: 1.5rem;
+    }
+
+    .social-section {
+      margin-top: 2rem;
+      height:30rem;
+      background-color: #eeeeee;
+      padding: 13rem;
+    }
+
+    .social-section p{
+      color: rgb(0, 0, 0);
+      font-family: Verdana;
+    }
+
+    .social-section h1{
+      color: rgb(0, 0, 0);
+      font-family: Verdana;
+    }
+
+    .button{
+        color: rgb(226, 48, 48);
+    }
+    .button-container-div {
+		text-align: center;
+	}
+
+
+    .footer{
+      background-color: #dddddd;
+      padding: 2rem;
+    }
+
+    .footer p{
+      color: rgb(0, 0, 0);
+    }
+
+    .footer-icon{
+      padding: 1rem;
+      
+    }
+
+    .logo {
+      color: white;
+    }
+
+    .responsive {
+    width: 100%;
+    height: auto;
+    }
+
+
+    /* Tablet */
+    @media only screen and (max-width: 768px) {
+      .price-section{
+      margin: 1rem;
+    }
+
+    .icon {
+      font-size: 4rem;
+      margin: 1.5rem;
+    }
+        .responsive {
+    width: 100%;
+    height: auto;
+    }
+
+    }
+
+    /* Mobile */
+    @media only screen and (max-width: 320px) {
+  .hero {
+    padding: 2rem;
+    margin-top: 2rem;
+    height:20rem;
+    font-size: 16px;
+  }
+
+  .price-section{
+      margin: 1rem;
+    }
+
+  .social-section {
+      margin-top: 2rem;
+      height:15rem;
+      background-color: #212529;
+      padding: 3rem;
+    }
+
+  .footer-text {
+    font-size: 10px;
+  }
+
+ .responsive {
+  width: 100%;
+  height: auto;
+}
+
+
+}
+
+
+  </style>
+
+
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand logo" href="#home" >
+      <img src="https://1000logos.net/wp-content/uploads/2022/08/Uniqlo-logo.png" height="40px" width="100%"></a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#product">Products and Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br>
+ 
+  <br>
+  <!-- Hero Page -->
+  <div class="container-fullwidth">
+    <div class="hero text-center" id="home">
+    <img src="https://im.uniqlo.com/global-cms/spa/res38136aacf97a9769a0987e1624108523fr.jpg">
+      <p>The popular TV anime "My Hero Academia" finally comes to UT!</p>
+      <p>Available Online + In All Stores</p>
+    </div>
+  </div>
+ <br>
+ <br>
+
+   
+  <!-- Product Section -->
+  <br>
+  <br>
+  <div class="container justify-content-center" id="product">
+    <h1>NEW PRODUCTS IN STOCK</h1>
+  </div>
+  <div class="container justify-content-center">
+    <div class="price-section" id="pricing">
+      <div class="row">
+        <div class="col-md-4 p-1">
+          <div class="card">
+            <div class="card-body text-center">
+              <h3 class="card-title">My Hero Academia UT (Short-Sleeve Graphic T-Shirt)</h3>
+              <img src="https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/464491/sub/goods_464491_sub15.jpg?width=350" height="100%" width="100%">
+              <span class="price">$24.90</span>
+              <br>
+              <button type="button" class="btn btn-success">Add to cart</button>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">New</li>
+              <li class="list-group-item">UNISEX</li>
+              <li class="list-group-item">XXS-3XL</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 p-1">
+          <div class="card">
+            <div class="card-body text-center">
+              <h3 class="card-title">My Hero Academia UT (Short-Sleeve Graphic T-Shirt)</h3>
+              <img src="https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/462903/sub/goods_462903_sub15.jpg?width=350" height="100%" width="100%">
+              <span class="price">$24.90</span>
+              <br>
+              <button type="button" class="btn btn-success">Add to cart</button>
+              
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">New</li>
+              <li class="list-group-item">UNISEX</li>
+              <li class="list-group-item">XXS-3XL</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 p-1">
+          <div class="card">
+            <div class="card-body text-center">
+              <h3 class="card-title">My Hero Academia UT (Short-Sleeve Graphic T-Shirt)</h3>
+              <img src="https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/464492/sub/goods_464492_sub14.jpg?width=700" height="100%" width="100%">
+              <span class="price">$24.90</span>
+              <br>
+              <button type="button" class="btn btn-success">Add to cart</button>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">New</li>
+              <li class="list-group-item">UNISEX</li>
+              <li class="list-group-item">XXS-3XL</li>
+            </ul>
+            </div>
+        </div>
+        <div class="col-md-4 p-1">
+           <div class="card">
+              <div class="card-body text-center">
+              <h3 class="card-title">My Hero Academia UT (Short-Sleeve Graphic T-Shirt)</h3>
+              <img src="https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/464493/sub/goods_464493_sub14.jpg?width=350" height="100%" width="100%">
+              <span class="price">$24.90</span>
+              <br>
+              <button type="button" class="btn btn-success">Add to cart</button>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">New</li>
+              <li class="list-group-item">UNISEX</li>
+              <li class="list-group-item">XXS-3XL</li>
+            </ul>
+            </div>
+            </div>
+        <div class="col-md-4 p-1">
+            <div class="card">
+                <div class="card-body text-center">
+               <h3 class="card-title">My Hero Academia UT (Short-Sleeve Graphic T-Shirt)</h3>
+                <img src="https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/464490/sub/goods_464490_sub14.jpg?width=350" height="100%" width="100%">
+                <span class="price">$24.90</span>
+                 <br>
+                 <button type="button" class="btn btn-success">Add to cart</button>
+               </div>
+               <ul class="list-group list-group-flush">
+                 <li class="list-group-item">New</li>
+                 <li class="list-group-item">UNISEX</li>
+                 <li class="list-group-item">XXS-3XL</li>
+                </ul>
+                </div>
+            </div>
+            <div class="col-md-4 p-1">
+            <div class="card">
+                <div class="card-body text-center">
+               <h3 class="card-title">My Hero Academia UT (Short-Sleeve Graphic T-Shirt)</h3>
+                <img src="https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/459551/sub/goods_459551_sub14.jpg?width=350" height="100%" width="100%">
+                <span class="price">$24.90</span>
+                 <br>
+                 <button type="button" class="btn btn-success">Add to cart</button>
+               </div>
+               <ul class="list-group list-group-flush">
+                 <li class="list-group-item">New</li>
+                 <li class="list-group-item">UNISEX</li>
+                 <li class="list-group-item">XXS-3XL</li>
+                </ul>
+            </div>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="button-container-div" id="about">
+  <button type="button" class="btn btn-success">See More</button>
+  </div>
+
+   <!-- Info Section -->
+<br>
+   <div class="container justify-content-center">
+    <div class="info-section">
+      <div class="row">
+        <div class="col-md-4 p-1 text-center">
+              <h3>About UNIQLO</h3>
+              <p>UNIQLO is a clothing apparel company, which was originally founded in Yamaguchi, Japan in 1949 as a textiles manufacturer. Now it is a global brand with over 1000 stores around the world. Redefining clothing, with a focus on quality and textiles which has been unwavered since the company’s origins in 1949.</p>
+        </div>
+        <div class="col-md-4 p-1 text-center">
+              <h3>Business Overview</h3>
+              <p>View UNIQLO’s business model and strategy in detail. From the merits of the business that UNIQLO devotes itself, right down to the product strategy which manifests itself into what you see in all of our stores.</p>
+        </div>
+        <div class="col-md-4 p-1 text-center">
+              <h3>Our Mission</h3>
+              <p>UNIQLO (Fast Retailing Group) has adopted a new sustainability mission statement; "Unlocking the Power of Clothing". With a focus on products, supply chain, employees, stores and communities, we're aiming to change the world for the better through our business.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Social Section -->
+  <div class="container-fullwidth">
+    <div class="social-section text-center" id="social">
+      <h1>FOR EDUCATIONAL PURPOSES ONLY</h1>
+      <button type="button" class="btn btn-success btn-lg">Disclaimer</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="container-fullwidth">
+    <div class="footer">
+      <div class="row text-center">
+        <div class="col-6 col-md-3 footer-text">
+            <p></p>
+        </div>
+      <div class="col-6 col-md-3 footer-text">
+        <p>This Website is not associated with UNIQLO and is for Educational Purposes ONLY</p>
+        
+      </div>
+
+      <div class="col-md-3">
+        <div class="row row-cols-lg-3 row-cols-md-2 row-cols-6">
+          <div class="col footer-icon"><i class="fa-brands fa-facebook"></i></div>
+          <div class="col footer-icon"><i class="fa-brands fa-twitter"></i></div>
+          <div class="col footer-icon"><i class="fa-brands fa-instagram"></i></div>
+          <div class="col footer-icon"><i class="fa-brands fa-tiktok"></i></div>
+          <div class="col footer-icon"><i class="fa-brands fa-tumblr"></i></div>
+          <div class="col footer-icon"><i class="fa-brands fa-pinterest"></i></div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <input type="text" class="form-control"><br>
+        <button class="btn btn-success">E-mail</button>
+      </div>
+
+
+      </div>
+      
+
+      
+    </div>
+  </div>
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      var navbar = document.querySelector('.navbar');
+      var sticky = navbar.offsetTop;
+
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add('sticky');
+      } else {
+        navbar.classList.remove('sticky');
+      }
+    });
+  </script>
+</body>
+</html>
